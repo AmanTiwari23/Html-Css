@@ -1,0 +1,21 @@
+h1 {
+  color: rgb(0, 0, 0);
+  background-color: burlywood;
+}
+
+#unique {
+  color: cadetblue;
+  background-color: brown;
+}
+
+.common {
+  color: goldenrod;
+  background-color: crimson;
+}
+
+#head,
+.para {
+  background-color: cadetblue;
+  color: forestgreen;
+  text-transform: uppercase;
+}

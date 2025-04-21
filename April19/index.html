@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="#" method='post' enctype="application/x-www-form-urlencoded">
+      <div>
+        <label for="msg">Message</label><br />
+        <textarea name="msg" id="msg" cols="60" rows="20"></textarea>
+      </div>
+      <div>
+        <br />
+        <label for="cars">select cars</label>
+        <select name="cars" id="cars">
+          <option value="bmw">Bmw</option>
+          <option value="audi">audi</option>
+          <option value="tesla" selected>tesla</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        <label for="courses">Select course</label>
+
+        <input type="text" id="courses" list="subjects" />
+        <datalist id="subjects">
+             <option value="C++"></option>
+             <option value="java"></option>
+             <option value="python"></option>
+             <option value="javascript"></option>
+             <option value="nodejs"></option>
+        </datalist>
+      </div>
+      <div>
+        <input type="submit" value="login">
+        <input type="reset" value="reset">
+      </div>
+    </form>
+  </body>
+</html>

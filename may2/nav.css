@@ -1,0 +1,55 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.navbar h1{
+    margin-left: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    height: 70px;
+
+}
+
+.navbar ul{
+    display: flex;
+    gap: 20px;
+    font-size: 23px;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.bars{
+    display: none;
+    margin-right: 30px;
+    font-size: 30px;
+}
+/* tablet view */
+@media screen and (max-width:768px){
+    .bars{
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        background-color: yellow;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+    #click:checked ~ .navbar ul {
+        display: block;
+    }
+}

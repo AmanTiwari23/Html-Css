@@ -27,14 +27,28 @@
 // let num2 = num.toString().split("");
 // console.log(num2);
 
-let ptag = document.querySelector("#text");
-
-function func1(){
-    ptag.innerHTML="Hello world";
-}
+// let ptag = document.querySelector("#text");
 
 
-function func2(){
-    alert("I am from function 2");
-}
+
+
+let text = document.querySelector("#text");
+
+// function textdel(){
+//         //  text.innerHTML = "";
+//          text.style.display = "none";
+// }
+let btn = document.querySelector("#button");
+let img = document.querySelector("img");
+
+let showtext = (() => {
+    (text.style.display=="none") ? (text.style.display="block", btn.innerHTML="hide", img.src="./iphoneimg2.jpg") : (text.style.display="none",btn.innerHTML="show",img.src="./iphone1.jpg");
+    // if(text.style.display=="none"){
+    //        text.style.display = "block";
+    //        btn.innerHTML = "hide";
+    // }else{
+    //     text.style.display = "none"
+    //     btn.innerHTML = "show"
+    // }
+});
 

@@ -32,23 +32,30 @@
 
 
 
-let text = document.querySelector("#text");
+// let text = document.querySelector("#text");
 
 // function textdel(){
 //         //  text.innerHTML = "";
 //          text.style.display = "none";
 // }
-let btn = document.querySelector("#button");
-let img = document.querySelector("img");
+// let btn = document.querySelector("#button");
+// let img = document.querySelector("img");
 
-let showtext = (() => {
-    (text.style.display=="none") ? (text.style.display="block", btn.innerHTML="hide", img.src="./iphoneimg2.jpg") : (text.style.display="none",btn.innerHTML="show",img.src="./iphone1.jpg");
-    // if(text.style.display=="none"){
-    //        text.style.display = "block";
-    //        btn.innerHTML = "hide";
-    // }else{
-    //     text.style.display = "none"
-    //     btn.innerHTML = "show"
-    // }
-});
+// let showtext = (() => {
+//     (text.style.display=="none") ? (text.style.display="block", btn.innerHTML="hide", img.src="./iphoneimg2.jpg") : (text.style.display="none",btn.innerHTML="show",img.src="./iphone1.jpg");
+//     // if(text.style.display=="none"){
+//     //        text.style.display = "block";
+//     //        btn.innerHTML = "hide";
+//     // }else{
+//     //     text.style.display = "none"
+//     //     btn.innerHTML = "show"
+//     // }
+// });
+
+let inp1 = document.querySelector("#first");
+let inp2 = document.querySelector("#second");
+let text = document.querySelector("#text");
+let show = ()=>{
+    text.innerHTML= (Number(inp1.value)+Number(inp2.value));
+}
 

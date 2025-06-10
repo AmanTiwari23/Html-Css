@@ -56,6 +56,7 @@ let inp1 = document.querySelector("#first");
 let inp2 = document.querySelector("#second");
 let text = document.querySelector("#text");
 let show = ()=>{
-    text.innerHTML= (Number(inp1.value)+Number(inp2.value));
+    text.innerHTML= ((+inp1.value)+ (+inp2.value));
 }
+
 

@@ -1,4 +1,5 @@
 function validateForm() {
+  document.documentElement.style.backgroundColor = "red";
   let nameError = document.getElementById("nameError");
 
   let emailerr = document.getElementById("emailError");
@@ -12,8 +13,8 @@ function validateForm() {
   let name = document.getElementById("name").value.trim();
   let email = document.getElementById("email").value.trim();
   let mobile = document.getElementById("mobile").value.trim();
-  let password = document.getElementById("password").value;
-  let confirmPassword = document.getElementById("confirmPassword").value;
+  let password = document.getElementById("password").value.trim();
+  let confirmPassword = document.getElementById("confirmPassword").value.trim();
 
   let isValid = true;
 
@@ -43,11 +44,18 @@ function validateForm() {
     passerr.innerText =
       "Password must be at least 6 characters";
     isValid = false;
+  }else if(!(password.match(/[0-9]/)  && password.match(/[a-z]/) && password.match(/[A-Z]/)  && password.match(/[@#$%^&*]/))){
+    passerr.innerText ="plese enter strong password";
+    
+
+    isValid= false; 
   }
   
   if (confirmPassword != password) {
     cpasserr.innerText =
       "Passwords do not match";
+       document.querySelector("#confirmPassword").value="";
+    document.querySelector("#confirmPassword").focus();
     isValid = false;
   }
 

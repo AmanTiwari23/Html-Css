@@ -75,6 +75,7 @@ button:active {
 
 .equals {
   background: rgba(0, 200, 0, 0.8);
+  grid-row: span 2;
 }
 
 .equals:hover {

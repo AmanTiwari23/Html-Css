@@ -11,16 +11,18 @@
 // clearInterval(id);
 
 let h2 = document.querySelector("#count");
+let inpval = document.querySelector("#inpval");
 
 let id;
-let count = 0;
 
 let  start = ()=>{
+ let count= (+inpval.value);
    id = setInterval(()=>{
+    
+    console.log(count);
      h2.innerHTML = count;
-     console.log(count);
      count++;
-    },2000)
+    },1000);
 }
 
 let stop = ()=>{
